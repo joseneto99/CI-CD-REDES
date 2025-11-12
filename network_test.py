@@ -3,8 +3,8 @@ import subprocess
 def test_connectivity():
     print("🔹 Simulando teste de conectividade entre dois nós...")
 
-    result = subprocess.run(["ping", "-c", "2", "127.0.0.1"], capture_output=True, text=True)
-    #result = subprocess.run(["ping", "-c", "2", "10.0.0.2"], capture_output=True, text=True)
+    #result = subprocess.run(["ping", "-c", "2", "127.0.0.1"], capture_output=True, text=True)
+    result = subprocess.run(["ping", "-c", "2", "10.0.0.2"], capture_output=True, text=True)
 
 
     if result.returncode == 0:
